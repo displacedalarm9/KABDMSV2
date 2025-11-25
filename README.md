@@ -1,6 +1,6 @@
 # KABDMSV2
 
-K. A. Breneman's Document Management System. Version 2
+K. A. Breneman's Document Management System, Version 2
 
 ## Overview
 
