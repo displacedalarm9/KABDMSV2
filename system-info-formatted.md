@@ -1,5 +1,12 @@
 # System Information Summary
 
+**Purpose:** Formatted summary of system hardware and software information  
+**Created:** 2025-08-22  
+**Last Updated:** 2025-08-22  
+**Source:** Windows System Information (msinfo32) export
+
+---
+
 **Report Date:** August 22, 2025 19:57:07  
 **System Name:** KABPC035CA  
 **User:** kabre  
