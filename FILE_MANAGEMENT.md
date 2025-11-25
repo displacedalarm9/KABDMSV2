@@ -161,6 +161,7 @@ MAJOR.MINOR.PATCH
 MAJOR - Significant changes to structure or purpose
 MINOR - Content additions or updates
 PATCH - Minor corrections, typos
+BUILD - Iterations of reports, controlled copies of data files
 ```
 
 ### Retention Policies
