@@ -13,9 +13,10 @@ This document defines the comprehensive audit and remediation protocol for the k
 ## References
 
 [See: README.md for repository structure]
-[See: docs/file-management.md for file organization]
-[See: ../kabreneman.us/docs/filename.md for naming conventions]
-[See: ../kabreneman.us/procedures/ for related procedures]
+[See: https://github.com/displacedalarm9/kabreneman.us/blob/main/docs/filename.md for naming conventions]
+[See: https://github.com/displacedalarm9/kabreneman.us/tree/main/procedures for related procedures]
+
+> **Note:** This repository (KABDMSV2) is in transition. The current README describes it as the "management system," but the planned state per this audit is for KABDMSV2 to become the data storage repository (data.kabreneman.us), while kabreneman.us becomes the file management system.
 
 ## Trigger Conditions
 
@@ -31,11 +32,21 @@ Execute this protocol when:
 
 ## Repository Ecosystem Overview
 
+### Planned State
+
 | Repository | Purpose | Visibility | Status |
 |------------|---------|------------|--------|
-| **kabreneman.us** | File management system (software) | Public | Planned |
-| **data.kabreneman.us** | Data storage (actual files) | Private | Active (currently named KABDMSV2) |
-| **dev.kabreneman.us** | Development playground | Public/Private | Planned |
+| **kabreneman.us** | File management system (software) | Public | Active |
+| **data.kabreneman.us** | Data storage (actual files) | Private | Planned (currently KABDMSV2) |
+| **dev.kabreneman.us** | Development playground | Public/Private | Needs decision |
+
+### Current State
+
+| Repository | Current Name | Current Purpose | Transition Needed |
+|------------|--------------|-----------------|-------------------|
+| kabreneman.us | kabreneman.us | Active with scripts, docs, procedures | Clarify as software repo |
+| KABDMSV2 | KABDMSV2 | Management system (per README) | Rename to data.kabreneman.us, set private |
+| dev.kabreneman.us | dev.kabreneman.us | Empty since Dec 2020 | Archive or repurpose |
 
 ### Repository Relationships
 
@@ -86,7 +97,7 @@ dev.kabreneman.us (Development)
 
 | Repository | Score | Status | Notes |
 |------------|-------|--------|-------|
-| dev.kabreneman.us | 🔴 Poor | Inactive 5 years | Needs repurposing or archival |
+| dev.kabreneman.us | 🔴 Poor | Empty since creation (Dec 2020) | Needs repurposing or archival |
 | kabreneman.us | 🟡 Fair | Active | Needs documentation improvements |
 | KABDMSV2 | 🟢 Good | Active | Well-organized, active development |
 
@@ -268,4 +279,4 @@ Stale branches to evaluate and clean:
 
 ## Contact
 
-For questions about this protocol, create an issue in KABDMSV2 or kabreneman.us repository.
+For questions about this protocol, create an issue in the KABDMSV2 repository or, once established, in the kabreneman.us repository.
