@@ -4,7 +4,7 @@ K. A. Breneman's Document Management System, Version 2
 
 ## Overview
 
-A document management repository for organizing and maintaining system documentation, data exports, and configuration files.
+This is a document management repository for organizing and maintaining system documentation, data exports, and configuration files.
 
 ## Repository Contents
 
