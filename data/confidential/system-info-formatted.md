@@ -1,6 +1,7 @@
 # System Information Summary
 
 **Purpose:** Formatted summary of system hardware and software information  
+**Classification:** Confidential  
 **Created:** 2025-08-22  
 **Last Updated:** 2025-08-22  
 **Source:** Windows System Information (msinfo32) export

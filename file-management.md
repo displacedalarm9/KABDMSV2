@@ -1,6 +1,14 @@
 # File Management Guidelines
 
-This document defines the standards for file management within the KABDMSV2 (Knowledge And Basic Document Management System Version 2) repository. These guidelines ensure consistency in naming, identifying, categorizing, and cycling files.
+This document defines the standards for file management within the KABDMSV2 repository. These guidelines ensure consistency in naming, identifying, categorizing, and cycling files.
+
+---
+
+## Terms
+
+| Term | Definition |
+|------|------------|
+| KABDMSV2 | K. A. Breneman's Document Management System, Version 2 |
 
 ---
 
@@ -116,12 +124,13 @@ JSON files should include a metadata section:
 ```
 KABDMSV2/
 ├── README.md              # Project overview
-├── FILE_MANAGEMENT.md     # This document
+├── file-management.md     # This document
 ├── docs/                  # Documentation files
 │   └── *.md
 ├── data/                  # Data files
 │   ├── raw/              # Unprocessed data
-│   └── processed/        # Formatted/processed data
+│   ├── processed/        # Formatted/processed data
+│   └── confidential/     # Confidential data files
 ├── config/               # Configuration files
 │   └── *.json, *.yaml
 └── archive/              # Archived files
@@ -132,20 +141,21 @@ KABDMSV2/
 
 | Category | Description | Location |
 |----------|-------------|----------|
-| Documentation | Human-readable documents, guides, references | Root or `docs/` |
-| Data | Raw and processed data files | `data/` |
-| Configuration | Settings and metadata | Root or `config/` |
-| Archive | Historical or deprecated files | `archive/` |
+| Documentation | Human-readable documents, guides, references. | Root or `docs/` |
+| Data | Raw and processed data files. | `data/` |
+| Confidential | Sensitive or private data files. | `data/confidential/` |
+| Configuration | Settings and metadata. | Root or `config/` |
+| Archive | Historical or deprecated files. | `archive/` |
 
 ### Current File Mapping
 
 | File | Category | Status |
 |------|----------|--------|
 | `README.md` | Documentation | Active |
-| `FILE_MANAGEMENT.md` | Documentation | Active |
+| `file-management.md` | Documentation | Active |
 | `topics.json` | Configuration | Active |
 | `sysinfo.txt` | Data (Raw) | Active |
-| `system-info-formatted.md` | Data (Processed) | Active |
+| `data/confidential/system-info-formatted.md` | Confidential | Active |
 
 ---
 
@@ -156,30 +166,33 @@ KABDMSV2/
 Use semantic versioning for tracked documents:
 
 ```
-MAJOR.MINOR.PATCH
+MAJOR.MINOR.PATCH.BUILD
 
-MAJOR - Significant changes to structure or purpose
-MINOR - Content additions or updates
-PATCH - Minor corrections, typos
-BUILD - Iterations of reports, controlled copies of data files
+MAJOR - Significant changes to structure or purpose.
+MINOR - Content additions or updates.
+PATCH - Minor corrections, typos.
+BUILD - Iterations of reports, controlled copies of data files.
 ```
 
 ### Retention Policies
 
 | File Type | Retention Period | Action After Period |
 |-----------|-----------------|---------------------|
-| Documentation | Indefinite | Update or archive |
-| Raw Data | 1 year | Archive or delete |
-| Processed Data | 1 year | Archive or delete |
-| Configuration | Indefinite | Version control |
-| Archives | 3 years | Review and purge |
+| Documentation | Indefinite | Update or archive. |
+| Raw Data | 1 year | Archive or delete. |
+| Processed Data | 1 year | Archive or delete. |
+| Configuration | Indefinite | Version control. |
+| Archives | 3 years | Review and purge. |
+| Pay statements, financial statements | 7 years | Review, summarize, purge. |
+| Journal entries, source documents, bookkeeping cycle | 5 years | Condense into one file per kind, paginate and format such file to retain post references. |
+| Log files from programs | 1 year | Summarize and ensure recommendations are executed or at least considered and that none are missed. |
 
 ### Cycling Workflow
 
-1. **Create**: New files follow naming conventions
-2. **Update**: Increment version, update timestamps
-3. **Archive**: Move to `archive/YYYY/` with date suffix
-4. **Purge**: Delete after retention period review
+1. **Create**: New files follow naming conventions.
+2. **Update**: Increment version, update timestamps.
+3. **Archive**: Move to `archive/YYYY/` with date suffix.
+4. **Purge**: Delete after retention period review.
 
 ### Archive Naming
 
@@ -200,28 +213,28 @@ Example:
 
 Files should be validated against these rules before committing:
 
-1. ✅ File name follows naming conventions
-2. ✅ Appropriate file extension used
-3. ✅ Required metadata/headers present
-4. ✅ File placed in correct category/location
+1. ✅ File name follows naming conventions.
+2. ✅ Appropriate file extension used.
+3. ✅ Required metadata/headers present.
+4. ✅ File placed in correct category/location.
 
 ### Review Checklist
 
 When reviewing changes, verify:
 
-- [ ] File names are lowercase with hyphens
-- [ ] No spaces or special characters in names
-- [ ] File extension matches content type
-- [ ] Documentation files have proper headers
-- [ ] Data files are appropriately categorized
-- [ ] Archived files follow archive naming pattern
+- [ ] File names are lowercase with hyphens.
+- [ ] No spaces or special characters in names.
+- [ ] File extension matches content type.
+- [ ] Documentation files have proper headers.
+- [ ] Data files are appropriately categorized.
+- [ ] Archived files follow archive naming pattern.
 
 ### Non-Compliance Resolution
 
-1. Identify non-compliant files
-2. Create compliant copy with proper naming
-3. Update references to use new file name
-4. Remove or archive non-compliant original
+1. Identify non-compliant files.
+2. Create compliant copy with proper naming.
+3. Update references to use new file name.
+4. Remove or archive non-compliant original.
 
 ---
 
@@ -229,21 +242,21 @@ When reviewing changes, verify:
 
 ### Do's ✅
 
-- Use lowercase names
-- Separate words with hyphens
-- Use descriptive, meaningful names
-- Include file headers in documentation
-- Follow the versioning scheme
-- Archive before deletion
+- Use lowercase names.
+- Separate words with hyphens.
+- Use descriptive, meaningful names.
+- Include file headers in documentation.
+- Follow the versioning scheme.
+- Archive before deletion.
 
 ### Don'ts ❌
 
-- Use spaces in file names
-- Use camelCase or PascalCase
-- Use special characters (except hyphens)
-- Create ambiguous or generic names
-- Delete files without archiving
-- Skip metadata in configuration files
+- Use spaces in file names.
+- Use camelCase or PascalCase.
+- Use special characters (except hyphens).
+- Create ambiguous or generic names.
+- Delete files without archiving.
+- Skip metadata in configuration files.
 
 ---
 
