@@ -1,6 +1,9 @@
 # File Management Guidelines
 
-This document defines the standards for file management within the KABDMSV2 repository. These guidelines ensure consistency in naming, identifying, categorizing, and cycling files.
+**Purpose:** Define standards for file management within the KABDMSV2 repository to ensure consistency in naming, identifying, categorizing, and cycling files.  
+**Created:** 2025-11-25  
+**Last Updated:** 2025-11-25  
+**Author:** K. A. Breneman
 
 ---
 

@@ -1,6 +1,9 @@
 # KABDMSV2
 
-K. A. Breneman's Document Management System, Version 2
+**Purpose:** K. A. Breneman's Document Management System, Version 2 - a repository for organizing and maintaining system documentation, data exports, and configuration files.  
+**Created:** 2025-11-25  
+**Last Updated:** 2025-11-25  
+**Author:** K. A. Breneman
 
 ## Overview
 
