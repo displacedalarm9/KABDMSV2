@@ -1,0 +1,70 @@
+# Operating System Files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+*~
+
+# IDE and Editor Files
+.vscode/
+.idea/
+*.swp
+*.swo
+*.swn
+.project
+.settings/
+*.sublime-project
+*.sublime-workspace
+
+# Build Artifacts
+build/
+dist/
+*.egg-info/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.so
+*.dylib
+*.dll
+*.exe
+*.o
+*.a
+
+# Logs and Temporary Files
+*.log
+logs/
+*.tmp
+*.temp
+temp/
+tmp/
+
+# Environment and Config
+.env
+.env.local
+*.env
+secrets/
+credentials/
+
+# Package Manager
+node_modules/
+npm-debug.log
+yarn-error.log
+package-lock.json
+yarn.lock
+
+# Python
+venv/
+env/
+ENV/
+.venv/
+
+# Personal Data (for this project)
+# Actual data should be in kabreneman.us repository
+data/
+*.private
+*.personal
