@@ -11,7 +11,7 @@
 
 - Use lowercase with hyphens for directories: `my-directory`
 - Use descriptive names that indicate purpose
-- Configuration files: `config_[TYPE]-[ID]_[Description].xml`
+- Configuration files: `config_NODE-[TYPE]-[NUMBER]_[Description].xml`
 
 ## Code Style
 
