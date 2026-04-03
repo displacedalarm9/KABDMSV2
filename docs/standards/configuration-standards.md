@@ -9,12 +9,12 @@ KABDMSV2 uses configuration files to manage system nodes and settings. This docu
 Configuration files follow this pattern:
 
 ```
-config_[NODE-TYPE]-[NUMBER]_[Description].xml
+config_NODE-[TYPE]-[NUMBER]_[Description].xml
 ```
 
 ### Components
 
-- **NODE-TYPE**: Category of the node (e.g., ARC, OPS, VR)
+- **TYPE**: Category of the node (e.g., ARC, OPS, VR)
   - `ARC`: Archival nodes
   - `OPS`: Operational nodes
   - `VR`: Virtual/VR-related nodes
@@ -37,7 +37,7 @@ config_NODE-VR-002_LegionPro5Gen10.xml
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
-<configuration>
+<Configuration>
   <metadata>
     <nodeId>NODE-TYPE-###</nodeId>
     <name>Descriptive Name</name>
@@ -55,7 +55,7 @@ config_NODE-VR-002_LegionPro5Gen10.xml
     <path type="data" location="/path/to/data" />
     <path type="backup" location="/path/to/backup" />
   </paths>
-</configuration>
+</Configuration>
 ```
 
 ### XML Formatting Rules

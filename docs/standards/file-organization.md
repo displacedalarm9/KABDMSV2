@@ -18,12 +18,11 @@ KABDMSV2/
 ├── topics.json             # Project metadata
 ├── docs/                   # Documentation
 │   ├── standards/          # Standards documentation
-│   └── guides/             # User and developer guides
-├── config_*.xml            # Configuration files
-├── scripts/                # Utility scripts
-├── templates/              # File templates
-└── tests/                  # Test files
+│   └── docsys-lifecycle-stages.md  # DOCSYS lifecycle framework
+└── config_*.xml            # Configuration files
 ```
+
+**Note:** Additional directories like `scripts/`, `templates/`, `tests/`, and `docs/guides/` may be added in the future as the project evolves.
 
 ## Directory Purposes
 
@@ -31,25 +30,27 @@ KABDMSV2/
 Documentation for the project
 
 - `standards/` - Project standards and conventions
-- `guides/` - How-to guides and tutorials
-- `api/` - API documentation
-- `images/` - Documentation images and diagrams
+- `docsys-lifecycle-stages.md` - DOCSYS artifact lifecycle framework
 
-### `/scripts/`
+### Future Directories (Planned)
+
+The following directories may be added as the project grows:
+
+#### `/scripts/` (Planned)
 Utility scripts and automation tools
 
 - Organized by purpose (backup, migration, setup, etc.)
 - Include README in subdirectories
 - Make scripts executable where appropriate
 
-### `/templates/`
+#### `/templates/` (Planned)
 Template files for various purposes
 
 - Configuration templates
 - Document templates
 - Code scaffolding templates
 
-### `/tests/`
+#### `/tests/` (Planned)
 Test files and test data
 
 - Mirror source structure
@@ -83,7 +84,14 @@ user-guide.md       # Lowercase with hyphens
 
 #### Configuration Files
 ```
-config_NODE-TYPE-###_Description.xml
+config_NODE-[TYPE]-[NUMBER]_Description.xml
+```
+
+Examples:
+```
+config_NODE-ARC-003_CustomArchival.xml
+config_NODE-OPS-001_Legion5Gen10.xml
+config_NODE-VR-002_LegionPro5Gen10.xml
 ```
 
 See [Configuration Standards](./configuration-standards.md) for details.
