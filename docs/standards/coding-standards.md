@@ -20,11 +20,17 @@
 ```xml
 <!-- Use 2-space indentation -->
 <!-- Include descriptive attributes -->
-<configuration>
-  <node id="NODE-TYPE-###" name="Descriptive Name">
-    <setting key="value" />
-  </node>
-</configuration>
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration>
+  <Metadata>
+    <NodeId>NODE-TYPE-###</NodeId>
+    <Name>Descriptive Name</Name>
+    <Version>1.0.0</Version>
+  </Metadata>
+  <Settings>
+    <Setting key="value" />
+  </Settings>
+</Configuration>
 ```
 
 ### JSON Files
