@@ -9,12 +9,12 @@ KABDMSV2 uses configuration files to manage system nodes and settings. This docu
 Configuration files follow this pattern:
 
 ```
-config_[NODE-TYPE]-[NUMBER]_[Description].xml
+config_NODE-[TYPE]-[NUMBER]_[Description].xml
 ```
 
 ### Components
 
-- **NODE-TYPE**: Category of the node (e.g., ARC, OPS, VR)
+- **TYPE**: Category of the node (e.g., ARC, OPS, VR)
   - `ARC`: Archival nodes
   - `OPS`: Operational nodes
   - `VR`: Virtual/VR-related nodes

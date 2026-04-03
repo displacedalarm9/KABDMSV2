@@ -32,12 +32,15 @@ This repository contains:
   - [Configuration Standards](docs/standards/configuration-standards.md)
   - [File Organization](docs/standards/file-organization.md)
 - **[DOCSYS Lifecycle Stages](docs/docsys-lifecycle-stages.md)** - Complete artifact lifecycle from capture to obsoletion
+- **[File Management Guidelines](file-management.md)** - File naming conventions, identification standards, and cycling policies
 
 ## Contributing
 
 Contributions are welcome! Please read [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines on how to contribute to this project.
 
 Please also review our [Code of Conduct](CODE_OF_CONDUCT.md) before participating.
+
+When adding or modifying files, ensure compliance with the [File Management Guidelines](file-management.md).
 
 ## Security
 

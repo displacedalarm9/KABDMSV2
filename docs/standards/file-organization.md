@@ -18,12 +18,14 @@ KABDMSV2/
 ├── topics.json             # Project metadata
 ├── docs/                   # Documentation
 │   ├── standards/          # Standards documentation
-│   └── guides/             # User and developer guides
+│   ├── docsys-lifecycle-stages.md  # DOCSYS lifecycle framework
+│   └── guides/             # User and developer guides (planned)
 ├── config_*.xml            # Configuration files
-├── scripts/                # Utility scripts
-├── templates/              # File templates
-└── tests/                  # Test files
+├── scripts/                # Utility scripts (planned)
+├── templates/              # File templates (planned)
+└── tests/                  # Test files (planned)
 ```
+
 
 ## Directory Purposes
 
@@ -31,25 +33,30 @@ KABDMSV2/
 Documentation for the project
 
 - `standards/` - Project standards and conventions
-- `guides/` - How-to guides and tutorials
-- `api/` - API documentation
-- `images/` - Documentation images and diagrams
+- `docsys-lifecycle-stages.md` - DOCSYS artifact lifecycle framework
+- `guides/` - How-to guides and tutorials (planned)
+- `api/` - API documentation (planned)
+- `images/` - Documentation images and diagrams (planned)
 
-### `/scripts/`
+### Future Directories (Planned)
+
+The following directories may be added as the project grows:
+
+#### `/scripts/`
 Utility scripts and automation tools
 
 - Organized by purpose (backup, migration, setup, etc.)
 - Include README in subdirectories
 - Make scripts executable where appropriate
 
-### `/templates/`
+#### `/templates/`
 Template files for various purposes
 
 - Configuration templates
 - Document templates
 - Code scaffolding templates
 
-### `/tests/`
+#### `/tests/`
 Test files and test data
 
 - Mirror source structure
@@ -83,7 +90,16 @@ user-guide.md       # Lowercase with hyphens
 
 #### Configuration Files
 ```
-config_NODE-TYPE-###_Description.xml
+config_NODE-[TYPE]-[NUMBER]_Description.xml
+```
+
+The `NODE-` prefix identifies the entry as a system node configuration. `TYPE` is the node category (e.g., ARC, OPS, VR), and `NUMBER` is a zero-padded three-digit identifier.
+
+Examples:
+```
+config_NODE-ARC-003_CustomArchival.xml
+config_NODE-OPS-001_Legion5Gen10.xml
+config_NODE-VR-002_LegionPro5Gen10.xml
 ```
 
 See [Configuration Standards](./configuration-standards.md) for details.

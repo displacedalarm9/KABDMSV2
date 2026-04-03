@@ -1,5 +1,10 @@
 {
-  "names": ["project", "KABDMS", "version2", "software", "file-management", "data-management-system"],
+  "_metadata": {
+    "description": "Repository topics and classification tags",
+    "created": "2025-11-25",
+    "version": "1.0.0"
+  },
+  "names": ["project", "KABDMS", "version2", "software", "file-management", "data-management-system", "document-management"],
   "description": "Personal data management system - software component",
   "dataRepository": "kabreneman.us",
   "visibility": "public"

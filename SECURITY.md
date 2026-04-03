@@ -18,8 +18,8 @@ We take the security of KABDMSV2 seriously. If you discover a security vulnerabi
 1. **Do NOT** open a public issue for security vulnerabilities
 2. Report security issues privately via:
    - GitHub Security Advisories (preferred)
+   - Email to displacedalarm9@gmail.com
    - Direct message to repository maintainers
-   - Email to the project maintainers
 
 ### What to Include
 
