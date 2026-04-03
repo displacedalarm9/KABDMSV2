@@ -31,6 +31,7 @@ This repository contains:
   - [Documentation Standards](docs/standards/documentation-standards.md)
   - [Configuration Standards](docs/standards/configuration-standards.md)
   - [File Organization](docs/standards/file-organization.md)
+- **[Node Registry](docs/node-registry.md)** - Registry of all assigned node IDs
 - **[DOCSYS Lifecycle Stages](docs/docsys-lifecycle-stages.md)** - Complete artifact lifecycle from capture to obsoletion
 
 ## Contributing

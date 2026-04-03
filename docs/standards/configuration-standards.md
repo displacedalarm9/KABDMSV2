@@ -37,25 +37,26 @@ config_NODE-VR-002_LegionPro5Gen10.xml
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
-<configuration>
-  <metadata>
-    <nodeId>NODE-TYPE-###</nodeId>
-    <name>Descriptive Name</name>
-    <description>Brief description of this node</description>
-    <created>YYYY-MM-DD</created>
-    <updated>YYYY-MM-DD</updated>
-  </metadata>
+<Configuration>
+  <Metadata>
+    <NodeId>NODE-TYPE-###</NodeId>
+    <Name>Descriptive Name</Name>
+    <Description>Brief description of this node</Description>
+    <Version>1.0.0</Version>
+    <Created>YYYY-MM-DD</Created>
+    <Updated>YYYY-MM-DD</Updated>
+  </Metadata>
   
-  <settings>
-    <setting key="property1" value="value1" />
-    <setting key="property2" value="value2" />
-  </settings>
+  <Settings>
+    <Setting key="property1" value="value1" />
+    <Setting key="property2" value="value2" />
+  </Settings>
   
-  <paths>
-    <path type="data" location="/path/to/data" />
-    <path type="backup" location="/path/to/backup" />
-  </paths>
-</configuration>
+  <Paths>
+    <Path type="data" location="/path/to/data" />
+    <Path type="backup" location="/path/to/backup" />
+  </Paths>
+</Configuration>
 ```
 
 ### XML Formatting Rules
@@ -63,15 +64,17 @@ config_NODE-VR-002_LegionPro5Gen10.xml
 1. **Indentation**: Use 2 spaces per level
 2. **Encoding**: Always UTF-8
 3. **Attributes**: Quote values with double quotes
-4. **Empty Elements**: Use self-closing tags `<element />`
-5. **Comments**: Use XML comments for documentation
+4. **Empty Elements**: Use self-closing tags `<Element />`
+5. **Element Names**: Use PascalCase (e.g., `<NodeId>`, `<Settings>`, `<ProfileOverlay>`)
+6. **XML Declaration**: Always include `<?xml version="1.0" encoding="UTF-8"?>`
+7. **Comments**: Use XML comments for documentation
 
 ```xml
 <!-- This is a section comment -->
-<section>
+<Section>
   <!-- This explains a specific setting -->
-  <setting key="example" value="value" />
-</section>
+  <Setting key="example" value="value" />
+</Section>
 ```
 
 ## Configuration Elements
@@ -81,23 +84,23 @@ config_NODE-VR-002_LegionPro5Gen10.xml
 Every configuration must include:
 
 ```xml
-<metadata>
-  <nodeId>NODE-TYPE-###</nodeId>
-  <name>Display Name</name>
-</metadata>
+<Metadata>
+  <NodeId>NODE-TYPE-###</NodeId>
+  <Name>Display Name</Name>
+  <Version>1.0.0</Version>
+</Metadata>
 ```
 
 ### Optional Elements
 
 ```xml
-<description>Detailed description</description>
-<created>YYYY-MM-DD</created>
-<updated>YYYY-MM-DD</updated>
-<version>1.0.0</version>
-<tags>
-  <tag>archival</tag>
-  <tag>production</tag>
-</tags>
+<Description>Detailed description</Description>
+<Created>YYYY-MM-DD</Created>
+<Updated>YYYY-MM-DD</Updated>
+<Tags>
+  <Tag>archival</Tag>
+  <Tag>production</Tag>
+</Tags>
 ```
 
 ## Node Types and IDs
@@ -177,13 +180,13 @@ Consider using XML Schema (XSD) for validation:
 
 ```xml
 <!-- Data storage configuration -->
-<paths>
+<Paths>
   <!-- Primary data location -->
-  <path type="data" location="/data/primary" />
+  <Path type="data" location="/data/primary" />
   
   <!-- Backup location (daily snapshots) -->
-  <path type="backup" location="/data/backup" />
-</paths>
+  <Path type="backup" location="/data/backup" />
+</Paths>
 ```
 
 ### Section Headers
@@ -192,9 +195,9 @@ Consider using XML Schema (XSD) for validation:
 <!-- ============================================ -->
 <!-- System Paths Configuration                   -->
 <!-- ============================================ -->
-<paths>
+<Paths>
   ...
-</paths>
+</Paths>
 ```
 
 ## Security Considerations
@@ -208,7 +211,7 @@ Consider using XML Schema (XSD) for validation:
 
 ```xml
 <!-- Use environment variable: DB_PASSWORD -->
-<setting key="database_password" value="${DB_PASSWORD}" />
+<Setting key="database_password" value="${DB_PASSWORD}" />
 ```
 
 ### Access Control
