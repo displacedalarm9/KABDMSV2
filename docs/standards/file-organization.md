@@ -93,6 +93,8 @@ user-guide.md       # Lowercase with hyphens
 config_NODE-[TYPE]-[NUMBER]_Description.xml
 ```
 
+The `NODE-` prefix identifies the entry as a system node configuration. `TYPE` is the node category (e.g., ARC, OPS, VR), and `NUMBER` is a zero-padded three-digit identifier.
+
 Examples:
 ```
 config_NODE-ARC-003_CustomArchival.xml
