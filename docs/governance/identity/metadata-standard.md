@@ -1,5 +1,6 @@
 ---
-artifact_id: UNISYS-META-STD-001
+artifact_id: S-00001_
+class: S-Class
 layer: Identity
 manifest: M-00001_
 status: Outstanding
@@ -65,7 +66,7 @@ This standard applies to:
 | `parent_id` | Parent artifact ID | `[PREFIX]-[TYPE]-[###]` | `SYS-001` |
 | `depends_on` | List of dependencies | Array of IDs | `["UNISYS-ID-CONST-001"]` |
 | `supersedes` | Superseded artifact ID | ID string | `UNISYS-META-STD-000` |
-| `related_to` | Related artifact IDs | Array of IDs | `["UNISYS-PMF-STD-001"]` |
+| `related_to` | Related artifact IDs | Array of IDs | `["S-00002_"]` |
 
 ---
 

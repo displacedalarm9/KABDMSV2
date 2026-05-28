@@ -1,5 +1,6 @@
 ---
-artifact_id: USTD-EXT-01
+artifact_id: S-00007_
+class: S-Class
 layer: Extensions
 manifest: M-00001_
 status: Outstanding
@@ -65,7 +66,7 @@ USTD-EXT-[##]
 
 Where `##` is a zero-padded sequential number assigned at registration.
 
-**Example:** `USTD-EXT-01` (this document itself is the Extension Standard, ID 01)
+**Example:** `S-00007_` (this document itself is the Extension Standard)
 
 ---
 
@@ -151,7 +152,7 @@ The UNISYS Extension Registry tracks all registered extensions:
 
 | ID | Name | Class | Version | Status |
 |----|------|-------|---------|--------|
-| USTD-EXT-01 | UNISYS Extension Standard | — | 0.1.0 | Outstanding |
+| S-00007_ | UNISYS Extension Standard | — | 0.1.0 | Outstanding |
 
 *Additional extensions are added via the registration process defined in this document.*
 

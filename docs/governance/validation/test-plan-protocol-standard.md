@@ -1,5 +1,6 @@
 ---
-artifact_id: UNISYS-VAL-TPPS-001
+artifact_id: S-00005_
+class: S-Class
 layer: Validation
 manifest: M-00001_
 status: Outstanding

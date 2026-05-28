@@ -1,5 +1,6 @@
 ---
-artifact_id: UNISYS-EXT-FBS-001
+artifact_id: S-00008_
+class: S-Class
 layer: Extensions
 manifest: M-00001_
 status: Outstanding

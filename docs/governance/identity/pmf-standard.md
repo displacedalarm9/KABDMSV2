@@ -1,5 +1,6 @@
 ---
-artifact_id: UNISYS-PMF-STD-001
+artifact_id: S-00002_
+class: S-Class
 layer: Identity
 manifest: M-00001_
 status: Outstanding

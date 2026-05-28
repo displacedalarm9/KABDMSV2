@@ -1,5 +1,6 @@
 ---
-artifact_id: UNISYS-OPS-LMS-001
+artifact_id: S-00006_
+class: S-Class
 layer: Operational
 manifest: M-00001_
 status: Outstanding

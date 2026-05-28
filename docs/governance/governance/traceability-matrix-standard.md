@@ -1,5 +1,6 @@
 ---
-artifact_id: UNISYS-GOV-TMS-001
+artifact_id: S-00003_
+class: S-Class
 layer: Governance
 manifest: M-00001_
 status: Outstanding
